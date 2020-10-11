@@ -1,6 +1,6 @@
 // ============================================================================
-//   Ver  :| Author					:| Mod. Date :| Changes Made:
-//   V1.1 :| Alexandra Du			:| 06/01/2016:| Added Verilog file
+//   Ver  :| Authors					:| Mod. Date :| Changes Made:
+//   V1.1 :| Jesse Rosart-Brodnitz and Shanley Mullen	:| 11/15/2018:| Added Verilog file
 // ============================================================================
 
 
@@ -130,7 +130,7 @@ module DE10_LITE_Golden_Top(
 assign LEDR[9] = ARDUINO_IO[2];
 
 
-bigmoodflop fuck(LEDR[6:0], HEX0[6:0], ARDUINO_IO[9:3], ARDUINO_IO[2]);
+bigmoodflop flip(LEDR[6:0], HEX0[6:0], ARDUINO_IO[9:3], ARDUINO_IO[2]);
 
 
 //=======================================================
