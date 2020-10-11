@@ -1,6 +1,6 @@
 // ============================================================================
-//   Ver  :| Author					:| Mod. Date :| Changes Made:
-//   V1.1 :| Alexandra Du			:| 06/01/2016:| Added Verilog file
+//   Ver  :| Authors					:| Mod. Date :| Changes Made:
+//   V1.1 :| Jesse Rosart-Brodnitz, Shanley Mullen	:| 11/15/2018:| Added Verilog file
 // ============================================================================
 
 
@@ -141,7 +141,7 @@ assign operand [3:0] = ARDUINO_IO[6:3];
 
 
 
-//need to call main function here. This could be thought of like bigmoodflop fuck here
+//need to call main function here. This could be thought of like bigmoodflop flip here
 ALU(ALUout, LEDR[8], Q, operand[7:0], ARDUINO_IO[9:7]);
 accumulator millionDreams(Q, ALUout, ARDUINO_IO[2]);		//changed Q to LEDR
 countThis(HEX0[6:0], Q);
