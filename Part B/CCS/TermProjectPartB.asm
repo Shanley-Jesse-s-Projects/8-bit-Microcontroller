@@ -7,10 +7,12 @@ main:
     bl GPIO_Init
     ldr R2, GPIO_PORTE_DATA_R
     ldr R0, GPIO_PORTF_DATA_R
+;initial point
 startpoint:
     mov R1, #0x00
     mov R3, #0x00
     B cycle
+ ;go through each point until the end
 settwo:
     mov R1, #0x01
     mov R3, #0x01
